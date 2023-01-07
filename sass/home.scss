@@ -4,29 +4,6 @@
      margin-bottom: $margin-bottom;
 }
 
-.container00{
-    &.container01{
-    background-image: url(../imgs/home/01.jpg);
-    }
-
-    &.container02{
-    background-image: url(../imgs/home/03.jpg);
-    }
-    
-    &.container03{
-    background-image: url(../imgs/home/02.gif);
-    }
-
-    &.container04{
-    background-image: url(../imgs/home/04.jpg);
-    }
-    
-};
-
-.tittlePadding{
-    padding: 200px 0px 0px 0px;
-}
-
 .shortTitle{
        @include title-set(550px, 25px);
 }

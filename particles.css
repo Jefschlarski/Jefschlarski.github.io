@@ -1,0 +1,14 @@
+
+/* ---- particles.js container ---- */ 
+#particles-js{ 
+    padding-top: 50px;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    width: 100%; 
+    height: 100vh; 
+    background-color: #000000; 
+    background-image: url("./imgs/fundo.jpg!d"); 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: 50% 50%; } 

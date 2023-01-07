@@ -5,6 +5,7 @@
 .header{
     font-weight: bold;
     font-size: 12px;
+    width: 100vh;
     
     #nav-hover{
         &:hover{
@@ -28,9 +29,8 @@
 }
 
 .logoPc{
-    width: 240px;
-    margin-left: -10px;
-    margin-right: 40px;
+    margin-top: 20px;
+    margin-left: 10px;
 }
 
 #button{
