@@ -1,0 +1,70 @@
+*{
+    padding: 0px;
+    margin: 0px;
+
+}
+
+body{
+    background-image: url(../imgs/wp9757086.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    text-shadow: black -1px -1px;
+}
+
+#textoLogo{
+    font-size: 65px;
+    color: black;
+    text-shadow: $cor1 -4px -2px, $cor2 4px 2px;
+}
+
+.container1{
+    width: 450px;
+    background: rgba( 99, 11, 103, 0.15 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 7px );
+    -webkit-backdrop-filter: blur( 7px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    font-size: 18px;
+}
+
+.btn{
+    border: 2px solid $cor1;
+    color: $cor1;
+    transition: 1s;
+    &:hover{
+        border-color: $cor2;
+        background-color: $cor2;
+    }
+}
+
+.swt{
+    cursor: pointer;
+    background-color: $cor1;  
+    border-color: white;
+    &:checked{
+        background-color: $cor2;  
+        border-color: white;
+    };
+}
+.rdi{
+    cursor: pointer;
+    background-color: $cor1;  
+    border-color: white;
+    &:checked{
+        background-color: $cor2;  
+        border-color: white;
+    };
+}
+
+.opt{
+    cursor: pointer;
+    background-color: $cor1;  
+    border-color: white;
+    &:checked{
+        background-color: $cor2;  
+        border-color: white;
+    };
+}
+

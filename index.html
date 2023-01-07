@@ -8,7 +8,8 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+  <script src="calculadora.js"></script>
+  <link rel="stylesheet" href="calculadora.css">
   <!-- Bootstrap CSS v5.2.1 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
@@ -20,7 +21,7 @@
 <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body id="inicio">
+<body onload="removerFiltro()" id="inicio">
   <header class="header-content">
     <nav style="width: 100%;" class="navbar navbar-expand-lg navbar-dark bg-transparent">
       <div class="container-fluid">
@@ -33,7 +34,7 @@
             <a class="ancora" href="#inicio">INICIO</a>
             <a class="ancora" href="#sobre">SOBRE</a>
             <a class="ancora" href="#tecnologias">TECNOLOGIAS</a>
-            <a class="ancora" href="">PROJETOS</a>
+            <a class="ancora" href="#projects">PROJETOS</a>
             <a class="ancora" href="">CONTATO</a>
           </div>
         </div>
@@ -65,7 +66,7 @@
   <div class="row text-center py-4">
      <div class="col">
       <button data-aos="zoom-in-up" data-aos-duration="1500" id="botao" class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapseWidthExample">
-        <img onmouseover="ativar('btn1' , this)" class="filter" src="./imgs/html5.png" alt="" srcset="">
+        <img onmouseover="ativar('btn1' , this)" id="img-filter" class="filter" src="./imgs/html5.png" alt="" srcset="">
       </button>
       <div>
         <div class="collapse" id="collapse1">
@@ -77,7 +78,7 @@
      </div>
      <div class="col">
       <button data-aos="zoom-in-up" data-aos-duration="1500" id="botao1" class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapseWidthExample">
-        <img class="filter" onmouseover="ativar('btn2', this)" src="./imgs/css.png" alt="">
+        <img class="filter" onmouseover="ativar('btn2', this)" id="img-filter2" src="./imgs/css.png" alt="">
       </button>
       <div>
         <div class="collapse" id="collapse2">
@@ -89,7 +90,7 @@
      </div>
      <div class="col">
       <button data-aos="zoom-in-up" data-aos-duration="1500" id="botao2"  class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapseWidthExample">
-        <img onmouseover="ativar('btn3' , this)" id="img3" class="filter" src="./imgs/sass.png" alt="">
+        <img onmouseover="ativar('btn3' , this)" id="img-filter3" id="img3" class="filter" src="./imgs/sass.png" alt="">
       </button>
       <div>
         <div class="collapse" id="collapse3">
@@ -101,7 +102,7 @@
      </div>
      <div class="col">
       <button data-aos="zoom-in-up" data-aos-duration="1500" id="botao3"  class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapseWidthExample">
-        <img onmouseover="ativar('btn4' , this)" id="img3" class="filter" src="./imgs/js.png" alt="">
+        <img onmouseover="ativar('btn4' , this)" id="img-filter4" id="img3" class="filter" src="./imgs/js.png" alt="">
       </button>
       <div>
         <div class="collapse" id="collapse4">
@@ -113,7 +114,7 @@
      </div>
      <div class="col">
       <button data-aos="zoom-in-up" data-aos-duration="1500" id="botao4" class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapseWidthExample">
-        <img class="filter" onmouseover="ativar('btn5', this)" style="width: 115px;" src="./imgs/react.png" alt="">
+        <img class="filter" onmouseover="ativar('btn5', this)" id="img-filter5" style="width: 115px;" src="./imgs/react.png" alt="">
         
       </button>
       <div>
@@ -126,52 +127,38 @@
      </div>
     </div>
 </div>
-
-  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  
+  <div id="projects" class="text-center p-5 container-fluid bg-black ">
+    <h1 style="background-color: #000000;color: white;">PROJETOS</h1>
+  </div>
+  <div id="carouselExampleControls" class="container00 carousel slide" data-bs-ride="carousel">
     <div id="carousel-size" class="carousel-inner">
-      <div class="carousel-item active container00 carousel01" data-bs-interval="1000000">
-        <div class="carouselText container">
-
-        <h1 class="carouseltitle">PROJETOS</h1>
-        <table class="table-size table ">
-          <tr>
-            <td data-aos="fade-right" data-aos-duration="1500" scope="col">ALTURA</td>
-            <td data-aos="fade-right" data-aos-duration="1500" class="text-end" scope="col">70 m/ 229.6 f</td>
-          </tr>
-          <tr>
-            <td data-aos="fade-right" data-aos-duration="1500" scope="col">DIAMETRO</td>
-            <td data-aos="fade-right" data-aos-duration="1500" class="text-end" scope="col">3.7 m / 12 ft</td>
-          </tr>
-          <tr>
-            <td data-aos="fade-right" data-aos-duration="1500" scope="col">MASSA</td>
-            <td data-aos="fade-right" data-aos-duration="1500" class="text-end" scope="col">549,054 kg / 1,207,920 lb</td>
-          </tr>
-          <tr>
-            <td data-aos="fade-right" data-aos-duration="1500" scope="col">CARGA MAXIMA PARA LEO</td>
-            <td data-aos="fade-right" data-aos-duration="1500" class="text-end" scope="col">22,800 kg / 50,265 lb</td>
-          </tr>
-          <tr>
-            <td data-aos="fade-right" data-aos-duration="1500" scope="col">CARGA MAXIMA PARA GTO</td>
-            <td data-aos="fade-right" data-aos-duration="1500" class="text-end" scope="col">8,300 kg / 18,300 lb</td>
-          </tr>
-          <tr>
-            <td data-aos="fade-right" data-aos-duration="1500" scope="col">CARGA MAXIMA PARA MARTE</td>
-            <td data-aos="fade-right" data-aos-duration="1500" class="text-end" scope="col">4,020 kg / 8,860 lb</td>
-          </tr>
-        </table>
-      </div>
-      </div>
-
-      <div class="carousel-item container00 carousel02">
-      </div>
+      <a href="./calculadora/calculadora.html">
+      <div class="carousel-item active carousel01" data-bs-interval="1000000">
+        <div class="text-center pt-4">
+            <h1 data-aos="fade-up" data-aos-duration="1500" >Calculadora</h1>
+            <p data-aos="fade-up" data-aos-duration="1500"> Calculadora construida utilizando html, css e JavaScript</p>
+          </div>
+      </div></a>
+      <a href="./landing/index.html">
+      <div class="carousel-item container00 carousel02" data-bs-interval="1000000">
+        <div class="text-center pt-4">
+          <h1 data-aos="fade-up" data-aos-duration="1500" >Pagina de Login</h1>
+          <p data-aos="fade-up" data-aos-duration="1500"> Pagina de login construida usando html, sass e bootstrap</p>
+        </div>
+        </div></a>
 
       <div class="carousel-item container00 carousel03">
+        <div class="text-center pt-4">
+          <h1 data-aos="fade-up" data-aos-duration="1500" >Pagina de Login</h1>
+          <p data-aos="fade-up" data-aos-duration="1500"> Pagina de login construida usando html, CSS</p>
+        </div>
       </div>
-
       <div class="carousel-item container00 carousel04">
-      </div>
-
-      <div class="carousel-item container00 carousel05">
+        <div class="text-center pt-4">
+          <h1 data-aos="fade-up" data-aos-duration="1500" >Pagina inicial Netflix</h1>
+          <p data-aos="fade-up" data-aos-duration="1500"> Pagina inicial do netflix feita usando html e css</p>
+        </div>
       </div>
 
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -185,20 +172,11 @@
   </div>
 </div>
 
-
-<div class="container-fluid container00 container04">
-    <div class="container tittlePadding">
-        <p data-aos="fade-down-right" data-aos-duration="1500" class="h1 mediumTitle">STARSHIP POUSA ASTRONAUTAS DA NASA NA LUA</p>
-
-        <button data-aos="fade-down-right" data-aos-duration="1500" type="button" id="button" class="btn btn-outline-light mt-5">SAIBA MAIS</button>
-  </div>
-</div>
-
 <footer class="container-fluid footer">
     <span class="me-4 copy">
         Jeferson Schlarski &copy;2022
     </span>
-    <a class="me-4 " target="blank" href="https://www.github.com">GitHub</a>
+    <a class="me-4 " target="blank" href="https://github.com/Jefschlarski">GitHub</a>
     <a class="me-4 " target="blank" href="https://www.linkedin.com">linkedin</a>
     <a class="me-4" target="blank" href="https://www.instagram.com">Instagram</a>
 

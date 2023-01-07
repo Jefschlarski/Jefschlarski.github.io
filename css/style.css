@@ -96,28 +96,34 @@
 }
 
 .carousel01 {
-  background-color: black;
+  background-image: url(../imgs/calculadora.png);
+  background-position: 50% 50%;
   height: 100vh;
 }
 
 .carousel02 {
-  background-image: url(../imgs/falcon9/04.jpg);
+  background-image: url(../imgs/landing.png);
   height: 100vh;
 }
 
 .carousel03 {
-  background-image: url(../imgs/falcon9/05.jpg);
+  background-image: url(../imgs/pagina\ login.png);
   height: 100vh;
 }
 
 .carousel04 {
-  background-image: url(../imgs/falcon9/06.jpg);
+  background-position: 50% 50%;
+  background-image: url(../imgs/clonenetflix.png);
   height: 100vh;
 }
 
 .carousel05 {
   background-image: url(../imgs/falcon9/07.jpg);
   height: 100vh;
+}
+
+.carouseltitle {
+  text-align: center;
 }
 
 .table-size {
