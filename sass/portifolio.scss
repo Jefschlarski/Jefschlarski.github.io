@@ -10,7 +10,6 @@
 .text05{
     font-size: 20px;
     font-weight: 500;
-    width: 80vh;
     display: flex;
     align-self: center;
     justify-content: center;
@@ -46,6 +45,7 @@
     max-height: 50vh;
 }
 .container05{
+
     padding-left: 40px;
     position: absolute;
 }
@@ -141,17 +141,30 @@
 }
 
 @media (max-width:550px){
+    .myname{
+        font-size: 60px;
+    }
+    .text05{
+        font-size: 18px;
+    }
     .table-size{
         width:350px;
     }
 }
 @media (max-width:450px){
+    .myname{
+        font-size: 50px;
+    }
+
+    .frontend{
+        font-size: 20px;
+    }
     .table-size{
         width:250px;
         font-size: 10px;
     }
     .text05{
-        font-size: 18px;
+        font-size: 12px;
     }
 }
 
