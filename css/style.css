@@ -32,6 +32,7 @@
   display: flex;
   align-self: center;
   justify-content: center;
+  padding-left: 40px;
 }
 
 .logo-nav {
@@ -63,8 +64,9 @@
 }
 
 #foto {
-  max-width: 50vh;
-  max-height: 50vh;
+  max-width: 60vh;
+  max-height: 60vh;
+  padding-right: 40px;
 }
 
 .container05 {
@@ -145,7 +147,11 @@
     align-items: center;
   }
   #foto {
+    padding-right: 0;
     padding-bottom: 20px;
+  }
+  .text05 {
+    padding-left: 0;
   }
 }
 @media (max-width: 770px) {
