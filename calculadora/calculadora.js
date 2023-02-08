@@ -14,11 +14,29 @@ function aplicar(valor){
     visor_baixo.innerHTML+=valor;
     trocar();
    } else{
-    visor_cima.innerHTML+=valor;
-    trocar();
+    visor_cima.innerHTML=visor_baixo.innerHTML+valor;
+    visor_baixo.innerHTML="";
     estado = false;
    }
 }
+}
+
+function plusMinus(){
+    if(visor_baixo.textContent){
+        visor_baixo.innerHTML=visor_baixo.innerHTML*-1;
+    }
+
+}
+
+const percent = ()=>{
+    if(visor_cima.textContent){
+        const alterado = eval(visor_cima.innerHTML.slice(0, -1));
+        visor_cima.innerHTML+=alterado*visor_baixo.innerHTML/100;
+        console.log(alterado);
+        visor_baixo.innerHTML ='';
+    }
+    
+    
 }
 
 function trocar(){
